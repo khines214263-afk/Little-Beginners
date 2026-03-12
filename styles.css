@@ -94,7 +94,7 @@ button:hover {
 .holidays li {
     padding: 8px;
     font-size: 18px;
-    border-bottom: 1px solid #ddd;
+    
 }
 @media (max-width: 768px) {
     .navbar {
@@ -106,5 +106,8 @@ button:hover {
     }
     .holidays {
         margin: 40px 20px;
+    }
+    .logo {
+        font-size: 50px;
     }
 }
