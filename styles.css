@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: darkturquoise;
+}
+main {
+    flex: 1;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 7rem;
+    font-weight: bold;
+    background: linear-gradient(to right, red 0%, red 33%, green 33%, green 66%, blue 66%, blue 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 10px;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 30px;
+}
+.hero img {
+    width: 600px;
+}
+.me {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.enrollment {
+    max-width: 500px;
+    margin: 60px auto;
+    text-align: left;
+}
+.enrollment h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    margin-top: 10px;
+    padding: 12px;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background: #187bcd;
+}
+.holidays {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    
+}
+.holidays ul {
+    list-style: none;
+    padding: 0;
+}
+.holidays li {
+    padding: 8px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero img {
+        width: 250px;
+    }
+    .holidays {
+        margin: 40px 20px;
+    }
+}
