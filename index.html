@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <title>Little Beginners</title>
         <link rel="stylesheet"href="styles.css">
+        <link rel="manifest" href="manifest.json">
+        <link rel="icon" href="icon-192.png">
     </head>
     <body>
         <header>
@@ -15,6 +17,7 @@
                     <li><a href="enrollment.html">Enrollment</a></li>
                     <li><a href="about.us.html">About Us</a></li>
                     <li><a href="holidays.html">Holidays</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
             <h1 class="logo">Little Beginners</h1>
@@ -28,4 +31,12 @@
             </main>
         
         <footer>@ Little Beginners Daycare</footer>
+        <script>
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("service-worker.js")
+                .then(function() {
+                    console.log("Service Worker Registered");
+                });
+            }
+        </script>
     </body>
