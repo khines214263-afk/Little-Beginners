@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Install App</title>
+        <link rel="stylesheet"href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="enrollment.html">Enrollment</a></li>
+                    <li><a href="about.us.html">About Us</a></li>
+                    <li><a href="holidays.html">Holidays</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+           
+             <h1 class="logo">Little Beginners</h1>
+            </header>
+             <div class="container"></div>
+            <p class="install">Add our daycare app to your phone for quick access to information, updates, and enrollment</p>
+            <buttom id="installBtn">Install App</buttom>
+            <p class="install">On iPhone:
+                Tap the Share icon and choose<span>"Add to Home Screen".</span>
+            </p>
+        </div>
+            <script>
+                let deferredPrompt;
+                window.addEventListener('beforeinstallprompt', (e) => {
+                    e.preventDefault();
+                    deferredPrompt = e;
+                    document.getElementById("installBtn").style.display = "block";
+                });
+                document.getElementById("installBtn").addEventListener("click", () => {
+                    deferredPrompt.prompt();
+                })
+            </script>
+            
+            </body>
+</html>

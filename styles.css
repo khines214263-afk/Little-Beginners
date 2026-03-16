@@ -93,8 +93,35 @@ button:hover {
 }
 .holidays li {
     padding: 8px;
+    font-size: 18px; 
+}
+.container {
+    text-align: center;
+}
+span {
+    color: green;
+}
+.install {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#installBtn {
+    display: block;
+    margin: auto;
+    padding: 10px 10px;
     font-size: 18px;
-    
+    max-width: 150px;
+    max-height: 150px;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+   
 }
 @media (max-width: 768px) {
     .navbar {
